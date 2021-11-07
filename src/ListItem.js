@@ -8,12 +8,15 @@ export default function ListItem(props) {
         <div className="fixed-container"></div>
         <div className="content-wrapper">
           <div className="heading">
-            <h1>Task List</h1>
+            <h1>To-do List</h1>
           </div>
 
           {props.listItem.map((items) => {
             return (
-              <div className="listItem" key={items.id}>
+              <div className="listItem" key={items.id} onClick={(e) => {
+                e.preventDefault();
+                props.deleteHandler(items.id)
+              }}>
                   <div className="listName">{items.name}</div>
                   <div style={{ fontSize: "13px" }} className="listDate">
                     {items.date}

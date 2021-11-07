@@ -5,16 +5,21 @@ import ListItem from "./ListItem";
 import Modal from "./Modal"
 function App() {
   const [listItem, setListItem] = useState([])
+  const [isShowing, setIsShowing] = useState(false)
+
   const listHandler = (list) => {
-    setListItem(prevMovies => ([...prevMovies, list]));
-    
-    console.log(listItem)
+    setListItem(prevList => ([...prevList, list]));
+    setIsShowing(false)
   } 
+
+  const showModal = (show) => {
+    setIsShowing(show);
+  }
 
   return (
     <>
-      <ListItem/>
-      <Modal listHandler={listHandler}/>
+      <ListItem listItem={listItem} showModal={showModal}/>
+      {isShowing && <Modal listHandler={listHandler}/>}
     </>
   );
 }

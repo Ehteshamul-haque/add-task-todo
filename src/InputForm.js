@@ -33,7 +33,10 @@ export default function InputForm(props) {
            <input type="date" name="Date"  value={date} onChange={(e) => setDate(e.target.value)}/>
          </div>
          <div className="submitBtn">
-           <input className="addBtn" type="submit" value="Add Task" onClick={() => props.listHandler(list)}/>
+           <input className="addBtn" type="submit" value="Add Task" onClick={(e) => {
+             e.preventDefault();
+             props.listHandler(list)}
+           }/>
          </div>
        </form>
        </div>

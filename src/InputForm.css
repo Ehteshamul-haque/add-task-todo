@@ -1,0 +1,16 @@
+.formContainer {
+   text-align: center;
+   padding: 10px 0;
+}
+
+.heading h1 {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 5px 0;
+    box-sizing: border-box;
+  }

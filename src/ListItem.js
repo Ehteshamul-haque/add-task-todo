@@ -7,6 +7,8 @@ export default function ListItem(props) {
     { name: "Buy Milk", date: "20-12-2025" },
     { name: "Buy Vegetables", date: "20-12-2021" }
   ];
+
+   
   return (
     <>
       <div id="container">
@@ -30,7 +32,7 @@ export default function ListItem(props) {
         </div>
         <Button />
         </div>
-        <div class="fixed-container"></div>
+        <div className="fixed-container"></div>
       </div>
     </>
   );

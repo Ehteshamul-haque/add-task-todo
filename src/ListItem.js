@@ -5,14 +5,7 @@ export default function ListItem(props) {
   const listOfItem = [
     { name: "Go for Walk", date: "20-12-2018" },
     { name: "Buy Milk", date: "20-12-2025" },
-    { name: "Buy Vegetables", date: "20-12-2021" },
-    { name: "Go for Walk", date: "20-12-2018" },
-    { name: "Buy Milk", date: "20-12-2025" },
-    { name: "Buy Vegetables", date: "20-12-2021" },
-    { name: "Go for Walk", date: "20-12-2018" },
-    { name: "Buy Milk", date: "20-12-2025" },
     { name: "Buy Vegetables", date: "20-12-2021" }
-    
   ];
   return (
     <>
